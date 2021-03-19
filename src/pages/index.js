@@ -1,3 +1,4 @@
+import Layout from "../components/Layout";
 import {
   Link as ChakraLink,
   Text,
@@ -14,15 +15,12 @@ import { DarkModeSwitch } from "../components/DarkModeSwitch";
 import { Footer } from "../components/Footer";
 
 const Index = () => (
-  <Container height="100vh">
-    <Hero title="Ubad Gargaar" />
-    <Main></Main>
-
-    <DarkModeSwitch />
-    <Footer>
-      <Text> 🏗 Under Construction 🚧</Text>
-    </Footer>
-  </Container>
+  <Layout>
+    <Container height="100vh">
+      <Hero title="Ubad Gargaar" />
+      <Main></Main>
+    </Container>
+  </Layout>
 );
 
 export default Index;
