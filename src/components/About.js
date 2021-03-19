@@ -6,33 +6,15 @@ import {
   Icon,
   Stack,
   useColorModeValue,
+  Divider,
 } from "@chakra-ui/react";
+
+import { PlusSquareIcon, ViewIcon } from "@chakra-ui/icons";
 
 function About() {
   const Feature = (props) => {
     return (
       <Flex>
-        <Flex shrink={0}>
-          <Flex
-            alignItems="center"
-            justifyContent="center"
-            h={12}
-            w={12}
-            rounded="md"
-            bg={useColorModeValue("brand.500")}
-            color="white"
-          >
-            <Icon
-              boxSize={6}
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              {props.description}
-            </Icon>
-          </Flex>
-        </Flex>
         <Box ml={4}>
           <chakra.dt
             fontSize="lg"
@@ -40,9 +22,9 @@ function About() {
             lineHeight="6"
             color={useColorModeValue("gray.900")}
           >
-            {props.title}
+            {props.title} <chakra.span ml="5">{props.icon}</chakra.span>
           </chakra.dt>
-          <chakra.dd mt={2} color={useColorModeValue("gray.500", "gray.400")}>
+          <chakra.dd mt={4} color={useColorModeValue("gray.600", "gray.400")}>
             {props.children}
           </chakra.dd>
         </Box>
@@ -52,7 +34,8 @@ function About() {
   return (
     <Flex
       bg="primary.600"
-      p={20}
+      rounded="xl"
+      p={4}
       w="auto"
       justifyContent="center"
       alignItems="center"
@@ -61,7 +44,7 @@ function About() {
         <Box maxW="7xl" mx="auto" px={{ base: 4, lg: 8 }}>
           <Box textAlign={{ lg: "center" }}>
             <chakra.h2
-              color={useColorModeValue("brand.600")}
+              color={useColorModeValue("primary.600")}
               fontWeight="semibold"
               textTransform="uppercase"
               letterSpacing="wide"
@@ -69,7 +52,7 @@ function About() {
               Ubadgargaar
             </chakra.h2>
             <chakra.p
-              mt={2}
+              mt={6}
               fontSize={{ base: "3xl", sm: "4xl" }}
               lineHeight="8"
               fontWeight="extrabold"
@@ -79,11 +62,11 @@ function About() {
               Who We Are
             </chakra.p>
             <chakra.p
-              mt={4}
+              mt={6}
               maxW="2xl"
               fontSize="xl"
               mx={{ lg: "auto" }}
-              color={useColorModeValue("gray.500", "gray.400")}
+              color={useColorModeValue("gray.600", "gray.400")}
             >
               Ubad Gargaar center was established in 2019, this center has been
               created for primary school-age children with special needs living
@@ -97,34 +80,31 @@ function About() {
               spacing={{ base: 10, md: 0 }}
               display={{ md: "grid" }}
               gridTemplateColumns={{ md: "repeat(2,1fr)" }}
-              gridColumnGap={{ md: 8 }}
+              gridColumnGap={{ md: 20 }}
+              px={{ base: 10, md: 20 }}
               gridRowGap={{ md: 10 }}
             >
               <Feature
                 title="Our Mission"
-                icon={
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                  />
-                }
+                icon={<PlusSquareIcon w={5} h={5} color="primary.800" />}
               >
                 Ubad Gargaar center is a safe, and caring learning environment
                 where all are empowered and respected
+                <Divider my={3} color="transparent" />
+                <ListItem>
+                  To have high expectations and celebrate achievement.
+                </ListItem>
+                <ListItem>Suppression Management</ListItem>
+                <ListItem>To develop lifelong learning skills</ListItem>
+                <ListItem>
+                  To move Ubad Gargaar pupils from dependent children to
+                  independent adults
+                </ListItem>
               </Feature>
 
               <Feature
                 title="Our Vission"
-                description={
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
-                  />
-                }
+                icon={<ViewIcon w={5} h={5} color="primary.800" />}
               >
                 For Ubad Gargaar Center to be recognized as an innovative Centre
                 of Excellence, providing an outstanding, personalized education
@@ -137,6 +117,32 @@ function About() {
           </Box>
         </Box>
       </Box>
+    </Flex>
+  );
+}
+
+function ListItem(props) {
+  return (
+    <Flex mt="2">
+      <Icon
+        fontSize="lg"
+        mt={1}
+        mr={2}
+        color={useColorModeValue("primary.500", "primary.300")}
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fillRule="evenodd"
+          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+          clipRule="evenodd"
+        ></path>
+      </Icon>
+      <chakra.p
+        fontSize="md"
+        color={useColorModeValue("gray.600", "gray.400")}
+        {...props}
+      />
     </Flex>
   );
 }
