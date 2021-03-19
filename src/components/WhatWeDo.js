@@ -67,7 +67,7 @@ function WhatWeDo() {
               fontSize={{ base: "3xl", md: "4xl" }}
               fontWeight="extrabold"
               textAlign={{ base: "center", sm: "left" }}
-              color={useColorModeValue("black")}
+              color={useColorModeValue("black", "gray.100")}
               lineHeight="shorter"
               letterSpacing="tight"
             >

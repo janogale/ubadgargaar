@@ -20,7 +20,7 @@ function About() {
             fontSize="lg"
             fontWeight="medium"
             lineHeight="6"
-            color={useColorModeValue("gray.900")}
+            color={useColorModeValue("gray.900", "gray.200")}
           >
             {props.title} <chakra.span ml="5">{props.icon}</chakra.span>
           </chakra.dt>
@@ -45,7 +45,7 @@ function About() {
         <Box maxW="7xl" mx="auto" px={{ base: 4, lg: 8 }}>
           <Box textAlign={{ lg: "center" }}>
             <chakra.h2
-              color={useColorModeValue("primary.600")}
+              color={useColorModeValue("primary.600", "primary.200")}
               fontWeight="semibold"
               textTransform="uppercase"
               letterSpacing="wide"
@@ -58,7 +58,7 @@ function About() {
               lineHeight="8"
               fontWeight="extrabold"
               letterSpacing="tight"
-              color={useColorModeValue("gray.900")}
+              color={useColorModeValue("gray.900", "gray.200")}
             >
               Who We Are
             </chakra.p>
