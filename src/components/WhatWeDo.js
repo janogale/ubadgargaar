@@ -40,9 +40,9 @@ function WhatWeDo() {
 
   return (
     <Flex
-      bg="gray.300"
+      bg="gray.400"
       rounded="md"
-      p={20}
+      p={{ base: 10, md: 20 }}
       w="auto"
       justifyContent="center"
       alignItems="center"
