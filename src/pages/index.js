@@ -1,24 +1,15 @@
 import Layout from "../components/Layout";
-import {
-  Link as ChakraLink,
-  Text,
-  Code,
-  List,
-  ListIcon,
-  ListItem,
-} from "@chakra-ui/react";
-import { CheckCircleIcon, LinkIcon } from "@chakra-ui/icons";
+import { Divider } from "@chakra-ui/react";
 import { Hero } from "../components/Hero";
+import About from "../components/About";
 import { Container } from "../components/Container";
-import { Main } from "../components/Main";
-import { DarkModeSwitch } from "../components/DarkModeSwitch";
-import { Footer } from "../components/Footer";
 
 const Index = () => (
   <Layout>
-    <Container height="100vh">
-      <Hero title="Ubad Gargaar" />
-      <Main></Main>
+    <Container>
+      <Hero />
+      <Divider my={8} />
+      <About />
     </Container>
   </Layout>
 );

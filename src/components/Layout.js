@@ -10,6 +10,7 @@ export default function LandingLayout(props) {
       align="center"
       maxW={{ xl: "1200px" }}
       minH="100vh"
+      height="100%"
       m="0 auto"
       {...props}
     >
