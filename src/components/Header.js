@@ -77,9 +77,9 @@ const Header = (props) => {
           direction={["column", "row", "row", "row"]}
           pt={[4, 4, 0, 0]}
         >
-          <MenuItem to="#">About us</MenuItem>
-          <MenuItem to="#">Our Program</MenuItem>
-          <MenuItem to="#">Donate</MenuItem>
+          <MenuItem to="#about">About us</MenuItem>
+          <MenuItem to="#programs">Our Program</MenuItem>
+          <MenuItem to="#donate">Donate</MenuItem>
           <MenuItem to="#">Get involved </MenuItem>
           <MenuItem to="#" isLast>
             <Button

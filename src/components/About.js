@@ -34,6 +34,7 @@ function About() {
   return (
     <Flex
       bg="primary.600"
+      id="about"
       rounded="xl"
       p={4}
       w="auto"
