@@ -10,7 +10,7 @@ export const Footer = (props) => {
       mt={4}
       py={20}
       align="center"
-      width="100%"
+      width="80%"
       color="primary.800"
       {...props}
     >

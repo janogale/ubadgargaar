@@ -35,11 +35,17 @@ const ContactUs = () => {
           </Box>
         </Box>
 
-        <Box py={12} px={6} maxW={{ base: "xl", lg: "5xl" }} w={{ lg: "50%" }}>
+        <Box
+          py={12}
+          px={6}
+          maxW={{ base: "xl", lg: "5xl" }}
+          w={{ lg: "50%" }}
+          color={useColorModeValue("gray.600", "gray.300")}
+        >
           <chakra.h2
             fontSize={{ base: "2xl", md: "3xl" }}
             mb="3"
-            color={useColorModeValue("gray.800", "white")}
+            color={useColorModeValue("gray.700", "gray.300")}
             fontWeight="bold"
           >
             Contact us
