@@ -85,7 +85,7 @@ function WhatWeDo() {
             </chakra.p>
             <Button
               as="a"
-              href="#"
+              href="#donate"
               variant="solid"
               w={{ base: "full", sm: "auto" }}
               colorScheme="primary"
