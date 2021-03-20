@@ -40,6 +40,7 @@ function WhatWeDo() {
 
   return (
     <Flex
+      id="getinvolved"
       bg="gray.400"
       rounded="md"
       p={{ base: 10, md: 20 }}
@@ -64,14 +65,14 @@ function WhatWeDo() {
           <Box>
             <chakra.h2
               mb={3}
-              fontSize={{ base: "3xl", md: "4xl" }}
+              fontSize={{ base: "2xl", md: "3xl" }}
               fontWeight="extrabold"
               textAlign={{ base: "center", sm: "left" }}
-              color={useColorModeValue("black", "gray.100")}
+              color={useColorModeValue("gray.600", "gray.100")}
               lineHeight="shorter"
               letterSpacing="tight"
             >
-              What We Need
+              Get involved
             </chakra.h2>
             <chakra.p
               mb={6}
@@ -99,6 +100,17 @@ function WhatWeDo() {
             spacing={5}
             alignItems="start"
           >
+            <chakra.h2
+              mb={3}
+              fontSize={{ base: "3xl", md: "4xl" }}
+              fontWeight="extrabold"
+              textAlign={{ base: "center", sm: "left" }}
+              color={useColorModeValue("gray.700", "gray.100")}
+              lineHeight="shorter"
+              letterSpacing="tight"
+            >
+              What We Need
+            </chakra.h2>
             <Feature>
               A Spacious building where children can learn and develop to the
               best of their abilities

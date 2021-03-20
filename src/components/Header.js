@@ -77,8 +77,8 @@ const Header = (props) => {
           <MenuItem to="#about">About us</MenuItem>
           <MenuItem to="#programs">Our Program</MenuItem>
           <MenuItem to="#donate">Donate</MenuItem>
-          <MenuItem to="#">Get involved </MenuItem>
-          <MenuItem to="#" isLast>
+          <MenuItem to="#getinvolved">Get involved </MenuItem>
+          <MenuItem to="#contact" isLast>
             <Button
               size="sm"
               rounded="md"
