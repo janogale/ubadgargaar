@@ -56,10 +56,7 @@ const Header = (props) => {
     >
       <Flex align="center">
         <Link href="/">
-          <Logo
-            w="150px"
-            color={["white", "white", "primary.500", "primary.500"]}
-          />
+          <Logo color={["white", "white", "primary.500", "primary.500"]} />
         </Link>
       </Flex>
 
