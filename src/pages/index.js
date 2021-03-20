@@ -4,6 +4,7 @@ import { Hero } from "../components/Hero";
 import About from "../components/About";
 import { Container } from "../components/Container";
 import WhatWeDo from "../components/WhatWeDo";
+import Services from "../components/Services";
 
 const Index = () => (
   <Layout>
@@ -13,6 +14,8 @@ const Index = () => (
       <About />
       <Divider my={8} />
       <WhatWeDo />
+      <Divider my={8} />
+      <Services />
     </Container>
   </Layout>
 );
